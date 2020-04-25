@@ -103,9 +103,6 @@ function gameResult(userChoice, compChoice, result) {
       }, 500);
       break;
   }
-  setTimeout(() => {
-    document.getElementById("action-message").innerHTML = "Make your move";
-  }, 3000);
 }
 
 function game(userChoice) {
