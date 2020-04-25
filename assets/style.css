@@ -11,17 +11,37 @@ body {
 }
 
 header {
-  background-color: white;
+  background-color: #1e1f27;
   padding: 20px;
+  margin-bottom: 50px;
 }
 
 header > h1 {
-  color: #252630;
+  color: white;
   text-align: center;
 }
 
+footer {
+  background-color: #1e1f27;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer > h1 {
+  text-align: center;
+  font-size: 15px;
+}
+
+footer > h1 > a {
+  color: white;
+  text-decoration: none;
+}
+
 .score-board {
-  margin: 20px auto;
+  margin: 30px auto;
   border: 3px solid white;
   border-radius: 4px;
   text-align: center;
@@ -49,6 +69,27 @@ header > h1 {
   position: absolute;
   top: 30px;
   right: -30px;
+}
+
+#user-choice {
+  position: absolute;
+  top: -10px;
+  left: -165px;
+}
+
+#comp-choice {
+  position: absolute;
+  top: -10px;
+  right: -170px;
+}
+
+#user-choice > img,
+#comp-choice > img {
+  max-width: 75%;
+  padding: 13px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  opacity: 0.7;
 }
 
 .result {
