@@ -40,25 +40,25 @@ function changeScore() {
 function changePicture(letterUser, letterComp) {
   switch (letterUser) {
     case "r":
-      document.getElementById("user-choice").innerHTML = '<img src="assets/images/rock.png" alt="rock" />';
+      document.getElementById("user-choice").src = "assets/images/rock.png";
       break;
     case "p":
-      document.getElementById("user-choice").innerHTML = '<img src="assets/images/paper.png" alt="paper" />';
+      document.getElementById("user-choice").src = "assets/images/paper.png";
       break;
     case "s":
-      document.getElementById("user-choice").innerHTML = '<img src="assets/images/scissors.png" alt="rock" />';
+      document.getElementById("user-choice").src = "assets/images/scissors.png";
       break;
   }
 
   switch (letterComp) {
     case "r":
-      document.getElementById("comp-choice").innerHTML = '<img src="assets/images/rock.png" alt="rock" />';
+      document.getElementById("comp-choice").src = "assets/images/rock.png";
       break;
     case "p":
-      document.getElementById("comp-choice").innerHTML = '<img src="assets/images/paper.png" alt="paper" />';
+      document.getElementById("comp-choice").src = "assets/images/paper.png";
       break;
     case "s":
-      document.getElementById("comp-choice").innerHTML = '<img src="assets/images/scissors.png" alt="rock" />';
+      document.getElementById("comp-choice").src = "assets/images/scissors.png";
       break;
   }
 }
