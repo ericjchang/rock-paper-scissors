@@ -44,6 +44,10 @@ function gameResult(userChoice, compChoice, result) {
       result_div.innerHTML = `${convertToWord(userChoice)}${userLetter} beats ${convertToWord(
         compChoice
       )}${compLetter} You win!"`;
+      document.getElementById(userChoice).classList.add("green-glow");
+      setTimeout(() => {
+        document.getElementById(userChoice).classList.remove("green-glow");
+      }, 500);
       break;
     case "lose":
       compScore++;
@@ -51,11 +55,19 @@ function gameResult(userChoice, compChoice, result) {
       result_div.innerHTML = `${convertToWord(userChoice)}${userLetter} beats ${convertToWord(
         compChoice
       )}${compLetter} You lose!"`;
+      document.getElementById(userChoice).classList.add("red-glow");
+      setTimeout(() => {
+        document.getElementById(userChoice).classList.remove("red-glow");
+      }, 500);
       break;
     case "draw":
-      result_div.innerHTML = `${convertToWord(userChoice)}${userLetter} beats ${convertToWord(
+      result_div.innerHTML = `${convertToWord(userChoice)}${userLetter} equals ${convertToWord(
         compChoice
       )}${compLetter} Draw!"`;
+      document.getElementById(userChoice).classList.add("grey-glow");
+      setTimeout(() => {
+        document.getElementById(userChoice).classList.remove("grey-glow");
+      }, 500);
       break;
   }
 }
