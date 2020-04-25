@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>rock-paper-scissors</title>
+    <link rel="stylesheet" href="/assets/style.css" />
   </head>
   <body>
     <header>
@@ -11,8 +12,8 @@
     </header>
 
     <div class="score-board">
-      <div id="user-label" class="badge">User</div>
-      <div id="comp-label" class="badge">Comp</div>
+      <div id="user-label" class="badge">user</div>
+      <div id="comp-label" class="badge">comp</div>
       <span id="user-score">0</span>:<span id="comp-score">0</span>
     </div>
 
@@ -21,12 +22,17 @@
     </div>
 
     <div class="choices">
-      <!-- TODO: add Images rock, scissors, paper, source on github -->
-      <div class="choice">
+      <div class="choice" id="r">
         <img src="assets/images/rock.png" alt="rock" />
+      </div>
+      <div class="choice" id="p">
         <img src="assets/images/paper.png" alt="paper" />
+      </div>
+      <div class="choice" id="s">
         <img src="assets/images/scissors.png" alt="scissors" />
       </div>
     </div>
+
+    <p id="action-message">Make your move</p>
   </body>
 </html>
